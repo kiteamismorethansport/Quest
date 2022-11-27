@@ -86,7 +86,7 @@
     if (dog!= null && dog.equals("dogIsPlaying")) {
       response.sendRedirect("finish.jsp");
     }
-    else response.sendRedirect("hello");
+    else response.sendRedirect("gameover.jsp");
   }
 
 %>

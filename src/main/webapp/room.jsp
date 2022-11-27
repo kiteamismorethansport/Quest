@@ -38,7 +38,7 @@
 </br>
 
 <form action="room.jsp">
-    <h1>You are in a black room now. You need to find the pass out.</br>
+    <h1>You are in a black room now. You need to find the exit.</br>
         There are a couple of items in it that you can probably use.</br>
         There is a window but it’s to high to reach by yourself.</br>
         There is a closet, table, chair and one more door. Your next step.</h1>
