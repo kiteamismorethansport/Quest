@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html style="background-color: black; color: white">
 <%
+  response.setIntHeader("Refresh", 600);
   if(session.getAttribute("username") == null)
   {
     response.sendRedirect("index.jsp");
@@ -50,12 +51,7 @@
   <label for="one">Jump of anyway</label><br>
   <input type="radio" id="two" name="id" value="two">
   <label for="two">Get back to the room</label><br>
-  <% String ball = (String)session.getAttribute("ball");
-    if (ball!= null && ball.equals("ball")) {
-      out.println("<input type=\"radio\" id=\"three\" name=\"id\" value=\"three\">\n" +
-              "    <label for=\"three\">Throw the ball to the dog</label><br>");
-    }
-  %>
+
   <%
     String rope = (String)session.getAttribute("chosen");
     if (rope!= null && rope.equals("rope")) {

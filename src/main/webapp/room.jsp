@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html style="background-color: black; color: white">
-<%
+<%  response.setIntHeader("Refresh", 600);
     if(session.getAttribute("username") == null)
     {
         response.sendRedirect("index.jsp");

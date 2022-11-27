@@ -9,14 +9,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html style="background-color: black; color: white">
 <%
+    response.setIntHeader("Refresh", 600);
     if(session.getAttribute("username") == null)
     {
         response.sendRedirect("index.jsp");
     }
 %>
-<link href="css2.css" rel="stylesheet">
-    <h1>You did it! This your prize! The painting on the wall is a seed for ether wallet. There is 0.1 ether on it.</br>
-        But you need to find the right order for the words to use the waller, cause they are written randomly</h1>
+<link href="css.css" rel="stylesheet">
+     <img src="images/gold%20cup.png" width="600" height="600">
+    <h1>You did it! You've passed the mysterious quest! Congrats!</h1>
 <%
     String user = (String)session.getAttribute("username");
     Date createTime = new Date(session.getCreationTime());

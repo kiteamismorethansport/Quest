@@ -13,6 +13,9 @@
 <h1>GAME OVER</h1>
 <% int i = (Integer)(session.getAttribute("numberOfGames"))+1;
 session.setAttribute("numberOfGames", i );
+    session.setAttribute("chosen", null);
+    session.setAttribute("ball", null);
+    session.setAttribute("chair", null);
 %>
 <form action = first.jsp>
     <input type = "submit" value = "Start again">

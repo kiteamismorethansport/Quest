@@ -3,12 +3,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Questgame</title>
 </head>
 
-
-<body style="background-color: black; color: white">
 <link href="css.css" rel="stylesheet">
+<body style="background-color: black; color: white">
+<img src="images/intro.jpg" alt="introImage">
+</br>
 <h1><%= "WELCOME TO THE MYSTERIOUS QUEST"%>
 </h1>
 <br/>
